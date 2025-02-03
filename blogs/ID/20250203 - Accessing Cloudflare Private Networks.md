@@ -8,7 +8,7 @@ Sebenarnya, setelah mengikuti _prerequisite_ di atas dari dokumentasi Coludflare
 
 ![Diagram cara kerja koneksi Private Network](../../assets/20250203-01.png)
 
-## Setting Up IP/CIDR Range
+## Routing & Setting Up IP/CIDR Range
 
 Pada tab Networks > Routes, kita perlu untuk menambahkan _route_. Pada bagian ini kita perlu untuk memberi tahu kepada Cloudflare, di _range_ IP berapa kah tempat _server_ kita di _local network_ kita dengan format `<IP Address>/<prefix length>`. _Prefix length_ disini menggambarkan jumlah bit yang digunakan oleh _network_, dan sisanya adalah jumlah bit yang dapat kita gunakan. Misalkan _prefix length_ kita adalah 8, maka kita mempunya sebanyak 2^(32-8) _IP address_ yang dapat digunakan.
 
@@ -20,7 +20,11 @@ Sebenarnya untuk mempermudah dalam menentukan CIRD kita, terdapat tools seperti 
 
 ![Contoh Output command ip address](../../assets/20250203-02.png)
 
-## Filter network traffic with Gateway
+## Route private network IPs through WARP
+
+Agar dapat mengakses IP yang sudah di-_define_ oleh kita pada setting _Routes_ sebelumnya, kita perlu untuk melakukan _routing_ pada tab Settings > WARP Client. Kemudian pada section Device settings pada bagian Profile settings pilih profile yang ingin di edit dengan menekan tombol kebab kemudian pilih Configure.
+
+Secara _default_, Cloudflare sudah meng-_exclude_ IP yang biasanya digunakan secara _private_ dan tidak dapat dijangkau melalui internet.
 
 ## Connecting to private network from Client
 
