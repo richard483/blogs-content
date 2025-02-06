@@ -1,4 +1,4 @@
-# Accessing Cloudflare Private Networks - Cloudflare Zero Trust \[Duplicate\]
+# Accessing Cloudflare Private Networks - Cloudflare Zero Trust \[Duplicate\] - Restart 1
 
 Mungkin beberapa orang ada yang masih kebingungan bagaimana caranya untuk melakukan koneksi Private Networks dari _local network_ kita menggunakan _paltform_ Cloudflare Zero Trust. Oleh karena itu, _guide_ ini di buat sekaligus sebagai catatan pribadi saya tentang bagaimana cara untuk melakukan _setup_ awal terhadap Private Networks yang disediakan dalam layanan Cloudflare Zero Trust.
 
