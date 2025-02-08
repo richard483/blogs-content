@@ -1,4 +1,4 @@
-# Accessing Cloudflare Private Networks - Cloudflare Zero Trust \[Duplicate\] - Restart 1
+# Accessing Cloudflare Private Networks - Cloudflare Zero Trust
 
 Mungkin beberapa orang ada yang masih kebingungan bagaimana caranya untuk melakukan koneksi Private Networks dari _local network_ kita menggunakan _paltform_ Cloudflare Zero Trust. Oleh karena itu, _guide_ ini di buat sekaligus sebagai catatan pribadi saya tentang bagaimana cara untuk melakukan _setup_ awal terhadap Private Networks yang disediakan dalam layanan Cloudflare Zero Trust.
 
@@ -6,7 +6,7 @@ Untuk _prerequisite_ sebelum menjalankan _guide_ ini, pastikan sebelumnya sudah 
 
 Sebenarnya, setelah mengikuti _prerequisite_ di atas dari dokumentasi Coludflare, kita sudah diarahkan untuk melakukan _set up_ agar dapat melakukan koneksi dengan _private networks_ kita dari Zero Trust (pada point 2b). Namun sebagai pemula, saya menemukan beberapa kebingungan setelah menjalankan guide tersebut, jadi pada _guide_ kali ini kita akan membahas pada bagian tertentunya saja.
 
-![Diagram cara kerja koneksi Private Network](../../assets/20250203/01.png)
+![Diagram cara kerja koneksi Private Network](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/01.png)
 
 ## Routing & Setting Up IP/CIDR Range
 
@@ -24,7 +24,7 @@ Pada kasus ini, saya ingin membuka akses ke seluruh usable IP yang ada di _local
 
 Sebenarnya untuk mempermudah dalam menentukan CIDR kita, terdapat tools seperti [cidr.xyz](https://cidr.xyz/), atau bahkan kita dapat melihat langsung CIDR range kita menggunakan command `ip address` pada CLI Linux kita.
 
-![Contoh Output command ip address](../../assets/20250203/02.png)
+![Contoh Output command ip address](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/02.png)
 
 ## Configuring Split Tunnel
 
@@ -51,9 +51,9 @@ Pada _section_ **Access policies** tambahkan atau buat baru _policy_ sesuai deng
 Selanjutnya, kita seharusnya sudah dapat melakukan koneksi ke _service_ yang berjalan di _private network_ kita dengan menggunakan bantuan WARP. Untuk konfigurasi pada _device client_ dapat dengan mengikuti langkah berikut:
 
 - Download aplikasi WARP pada _device_ yang ingin dijalankan
-- Klik ikon gir pada tampilan _pop up_ WARP dan klik **Preferences** ![Klik ikon gir pada pop up](../../assets/20250203/03.png)
+- Klik ikon gir pada tampilan _pop up_ WARP dan klik **Preferences** ![Klik ikon gir pada pop up](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/03.png)
 - Kemudian pada tampilan _pop up_ baru yang muncul, pilih tab **Account** kemudian klik **Login with Cloudflare Zero Trust**
-- Masukkan nama organisasi kita pada Coludflare ![masukkan nama organisasi](../../assets/20250203/05.png)
+- Masukkan nama organisasi kita pada Coludflare ![masukkan nama organisasi](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/05.png)
 - Setelah itu, lakukan autentikasi menggunakan akun yang sudah sesuai dengan _rule_ yang di-_define_ pada **Device Enrollment Permission**
 - Jika autentikasi sukses, _device_ kita sudah mendapatkan _permission_ untuk mengakses Zero Trust
 
