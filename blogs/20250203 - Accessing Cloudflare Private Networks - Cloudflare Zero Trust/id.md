@@ -51,9 +51,11 @@ Pada _section_ **Access policies** tambahkan atau buat baru _policy_ sesuai deng
 Selanjutnya, kita seharusnya sudah dapat melakukan koneksi ke _service_ yang berjalan di _private network_ kita dengan menggunakan bantuan WARP. Untuk konfigurasi pada _device client_ dapat dengan mengikuti langkah berikut:
 
 - Download aplikasi WARP pada _device_ yang ingin dijalankan
-- Klik ikon gir pada tampilan _pop up_ WARP dan klik **Preferences** ![Klik ikon gir pada pop up](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/03.png)
+- Klik ikon gir pada tampilan _pop up_ WARP dan klik **Preferences**\
+![Klik ikon gir pada pop up](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/03.png)
 - Kemudian pada tampilan _pop up_ baru yang muncul, pilih tab **Account** kemudian klik **Login with Cloudflare Zero Trust**
-- Masukkan nama organisasi kita pada Coludflare ![masukkan nama organisasi](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/05.png)
+- Masukkan nama organisasi kita pada Coludflare\
+![masukkan nama organisasi](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250203/05.png)
 - Setelah itu, lakukan autentikasi menggunakan akun yang sudah sesuai dengan _rule_ yang di-_define_ pada **Device Enrollment Permission**
 - Jika autentikasi sukses, _device_ kita sudah mendapatkan _permission_ untuk mengakses Zero Trust
 
