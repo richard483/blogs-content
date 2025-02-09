@@ -35,7 +35,7 @@ Agar dapat mengakses IP yang sudah di-_define_ oleh kita pada setting _Routes_ s
 
 Secara _default_, Cloudflare sudah meng-_exclude_ IP yang biasanya digunakan secara _private_ dan tidak dapat dijangkau melalui internet pada konfigurasi Split Tunnel nya. Oleh karena itu, Cloudflare meng-_exclude_ IP dengan _range_ `192.168.0.0/16`, yang dimana ini bersinggungan dengan IP tempat _homelab server_ saya di serve. Sehingga saya akan meng-_takeout_ IP _range_ ini dari rule.
 
-Tentu perlu diperhatikan apakah _IP range_ lain yang terdapat pada _rule_ juga bersinggungan dengan _IP yang digunakan_ pada perangkat yang ingin kita hubungan. Untuk mudahnya kita dapat mengecek _range IP_ kita dengan [cidr.xyz](cidr.xyz).
+Tentu perlu diperhatikan apakah _IP range_ lain yang terdapat pada _rule_ juga bersinggungan dengan _IP yang digunakan_ pada perangkat yang ingin kita hubungan. Untuk mudahnya kita dapat mengecek _range IP_ kita dengan [cidr.xyz](https://cidr.xyz/).
 
 ## Device Enrollment Permisison
 
