@@ -67,6 +67,6 @@ Untuk mencoba apakah _device client_ sudah mendapatkan akses ke _private network
 
 #### References
 
-- https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/
-- https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/cloudflared/
-- https://cidr.xyz/
+- [https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/)
+- [https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/cloudflared/](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/cloudflared/)
+- [https://cidr.xyz/](https://cidr.xyz/)
