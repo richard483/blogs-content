@@ -82,7 +82,7 @@ Untuk dapat menggunakan Quick tunnel, kita dapat melakukan step berikut:
   cloudflared tunnel --url <local_address aplikasi_kita>
   ```
 
-Kemudian cloudflared akan memberikan URL aplikasi kita yang dapat di akses melalui internet. \
+Kemudian cloudflared akan memberikan URL aplikasi kita yang dapat di akses melalui internet.
 ![Contoh keluaran cloudflared](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/5.png)
 
 ---
