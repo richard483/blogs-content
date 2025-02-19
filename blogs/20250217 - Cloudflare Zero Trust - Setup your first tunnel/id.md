@@ -34,7 +34,8 @@ Pertama-tama kita perlu untuk mendaftarkan domain yang sudah kita miliki kepada 
 
 Untuk melakukan pengaturannya dapat dengan mengikuti langkah berikut:
 
-1. Masukkan nama domain pada halaman utama Cloudflare [berikut](https://dash.cloudflare.com/) ![Halaman utama Cloudflare](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/3.png)
+1. Masukkan nama domain pada halaman utama Cloudflare [berikut](https://dash.cloudflare.com/) \
+![Halaman utama Cloudflare](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/3.png)
 2. Pada _radio button_ di bawah pilih saja **Quick scan for DNS records**, kemudian klik **Continue**
 3. Pilih plan **Free** kemudian klik **Continue**
 4. _Review DNS records_ dari domain kita, kemudian klik **Continue to activation**
@@ -48,7 +49,8 @@ Setelah membuat akun CLoudflare, dapat mengikuti langkah berikut
 1. Pada halaman home dari [Cloudflare Zero trust](https://one.dash.cloudflare.com/) pilih tab **Networks** > **Tunnels** kemudian klik "Create a tunnel"
 2. Pilih _tunnel type_ yang ingin digunakan, pada artikel ini kita akan menggunakan Cloudflared.
 3. Tentukan nama tunnel, kemudian klik **Save tunnel**
-4. Kita akan diarahkan ke halaman **Configure**, kemudian ikut instruksi yang ada untuk meng-_install_ _connector_ ke "server" kita. Karena pada artikel ini saya menggunakan Ubuntu, maka saya hanya perlu untuk men-_paste_ dan menjalankan _command_ yang tersedia untuk meng-_install connector_ nya ![Command untuk menginstall connector pada Linux berbasis Debian](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/2.png)
+4. Kita akan diarahkan ke halaman **Configure**, kemudian ikut instruksi yang ada untuk meng-_install_ _connector_ ke "server" kita. Karena pada artikel ini saya menggunakan Ubuntu, maka saya hanya perlu untuk men-_paste_ dan menjalankan _command_ yang tersedia untuk meng-_install connector_ nya /
+![Command untuk menginstall connector pada Linux berbasis Debian](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/2.png)
 5. Kemudian _select_ **Next**
 
 ## Connect application
@@ -59,7 +61,8 @@ Untuk menambahkan aplikasi kita kepada tunnel, dapat dilakukan dengan step berik
 
 1. Pada _dashboard_ Zero Trust, klik tab **Networks** > **Tunnels**
 2. Klik **titik tiga** pada tunnel yang ingin di hubungkan kemudian klik **Configure**
-3. Pilih tab **Public Hostname** kemudian klik tombol **Add a public hostname** ![Halaman pengaturan Public Hostname](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/4.png)
+3. Pilih tab **Public Hostname** kemudian klik tombol **Add a public hostname** \
+![Halaman pengaturan Public Hostname](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/4.png)
 4. Isi informasi domain sesuai dengan kebutuhan kita, untuk _subdomain_ kita tidak perlu menambahkannya apabila kita ingin mengarahkan aplikasi kita ke _root domain_ kita
 5. Untuk informasi aplikasi, cukup mengikuti apa yang sudah berjalan di "server" kita. Apabila saya mempunya aplikasi React JS yang berjalan di http://localhost:7000, maka saya cukup mengisi kolom **Type** dengan **HTTP**, dan **URL** dengan **localhost:7000**, mengikuti aplikasi yang ingin di _expose_
 6. Klik **save hostname**
@@ -79,7 +82,7 @@ Untuk dapat menggunakan Quick tunnel, kita dapat melakukan step berikut:
   cloudflared tunnel --url <local_address aplikasi_kita>
   ```
 
-Kemudian cloudflared akan memberikan URL aplikasi kita yang dapat di akses melalui internet.
+Kemudian cloudflared akan memberikan URL aplikasi kita yang dapat di akses melalui internet. \
 ![Contoh keluaran cloudflared](https://media.githubusercontent.com/media/richard483/blogs-content/refs/heads/master/assets/20250217/5.png)
 
 ---
